@@ -30,16 +30,16 @@
   <a-scene
     vr-mode-ui="enabled: false;"
     renderer="logarithmicDepthBuffer: true;"
-    embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+    embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: true;'>
     <a-nft
       type='nft'
-      url='url(https://rawcdn.githack.com/redisitic/weird-ARJS-Repo/283869fc0f983dcee104789da52509c4f21b4f5f/imgs/71LzjIGF1ZL.jpg)'
+      url='./imgs/ppl.png'
       smooth='true'
       smoothCount='10'
       smoothTolerance='0.01'
       smoothThreshold='5'>
-      <a-entity
-        gltf-model="url(https://rawcdn.githack.com/redisitic/weird-ARJS-Repo/1bae4b2a47b7b1353b7a9727391ed76c57fdb9e6/models/skaty.glb)"
+      <a-entity 
+        gltf-model='./models/scene.glb'
         scale="0.2 0.2 0.2"
         position="50 50 0">
       </a-entity>
