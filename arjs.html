@@ -1,51 +1,45 @@
-<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
-<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 <style>
   .arjs-loader {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #fff;
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #222;
+    background: rgba( 0, 0, 0, 0.6 );
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(24px);
     z-index: 9999;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .arjs-loader div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    font-size: 1.25em;
+    font-size: 5vh;
     color: white;
   }
 </style>
-<body style="margin : 0px; overflow: hidden;">
+<script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
+<body style='margin : 0px; overflow: hidden;'>
   <div class="arjs-loader">
-    <div>Ruk bhai load ho raha hei</div>
+    <div>Ruk Ja bhai load ho raha</div>
   </div>
-  <a-scene
-    vr-mode-ui="enabled: false;"
-    renderer="logarithmicDepthBuffer: true;"
-    embedded
-    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
-    >
-    <a-nft
-        type="nft"
-        url=""
-        smooth="true"
-        smoothCount="10"
-        smoothTolerance=".01"
-        smoothThreshold="5"
-    >
-    <a-entity
-        gltf-model=""
-        scale="5 5 5"
-        position="50 150 0"
-    >
-      </a-entity>
-    </a-nft>
-    <a-entity camera></a-entity>
-  </a-scene>
+    <a-scene
+        vr-mode-ui="enabled: false;"
+        renderer="logarithmicDepthBuffer: true;"
+        embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+        <a-nft
+            type='nft' url='https://rawcdn.githack.com/redisitic/weird-ARJS-Repo/283869fc0f983dcee104789da52509c4f21b4f5f/imgs/71LzjIGF1ZL.jpg'
+            smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
+            <a-entity
+                gltf-model='https://rawcdn.githack.com/redisitic/weird-ARJS-Repo/283869fc0f983dcee104789da52509c4f21b4f5f/models/skaty.glb'
+                scale="5 5 5"
+                position="100 100 0"
+                >
+            </a-entity>
+        </a-nft>
+		<a-entity camera></a-entity>
+    </a-scene>
 </body>
